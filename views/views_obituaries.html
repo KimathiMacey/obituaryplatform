@@ -1,0 +1,33 @@
+<!-- views/views_obituaries.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Obituaries</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <h1>Obituaries</h1>
+        <table id="obituaryTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Date of Death</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically populated here -->
+                <tr id="errorRow" style="display: none;">
+                    <td colspan="5">Error loading obituaries</td>
+                </tr>
+            </tbody>
+
+        </table>
+    
+        <script src="/public/js/obituaries.js"></script>
+</body>
+</html>
